@@ -138,7 +138,7 @@ li{
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 5px;
+    grid-gap: 20px;
     justify-content: space-around;
 
 }
@@ -299,6 +299,14 @@ top:0;
 }
 table, th, td {
     border: 1px solid black;
+}
+.aboutus{
+    width: 100%;
+    height: 100%;
+}
+.aboutus img{
+    height: 100%;
+    width: 100%;
 }
 
 

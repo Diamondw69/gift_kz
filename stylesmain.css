@@ -237,3 +237,178 @@ li{
     max-width: 100%;
     object-fit: contain;
 }
+/*footer*/
+.footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    width: 100%;
+    background-color: #e3ddd8;
+    border-radius: 10px;
+}
+address{
+    margin: 15px 20px;
+}
+.footer .right{
+    margin-top: 15px;
+    height: 120px;
+    width: 30%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .right a{
+    padding: 2px 30px;
+}
+.footer a:hover{
+    background-color: #dad6d3;
+}/***/
+.grid131{
+    height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+}
+.goods .grid{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    justify-content: space-around;
+
+}
+.cards {
+    margin: 0 20px 70px 20px;
+}
+.cards__row{
+    margin: 20px 20px 70px 20px;
+    display: flex;
+}
+.cards__column {
+    flex: 0 1 33.333%;
+    padding: 0 10px;
+
+}
+.cards__image {
+    background-color: white;
+    margin: 0 0 1px 0;
+    padding: 0 0 100% 0;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+
+}
+.cards__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cards__item {
+
+}
+#suret{
+    background-color: white;
+    margin: 0 0 1px 0;
+    padding: 0 0 30% 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e3ddd8;
+    color: black;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+.card__image{
+    padding: 0 0 10px 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: 0.5s;
+}
+.card__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card__name{
+    font-size: 18px;
+    top:5px;
+    position: relative;
+    transition: 0.5s;
+}
+.card__price{
+    top:3px;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s;
+}
+.card__btn{
+    border: none;
+    cursor: pointer;
+    background-color: lightgray;
+    padding: 10px 20px;
+    border-radius:30px;
+    color:inherit;
+    text-transform: inherit;
+    font-weight: inherit;
+    position: relative;
+    transition: 0.5s;
+    top:100px;
+}
+.card__btn:hover{
+    background-color: gray;
+
+}
+.card:hover .card__btn{
+    top:0;
+}
+
+.card::before{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: lightyellow;
+    transform: skewY(345deg);
+
+    position: absolute;
+    top: -50%;
+    transition: 0.5s;
+}
+.card:hover::before{
+    transform: skewY(390deg);
+    top: -70%;
+}
+.card:hover .card__image{
+    width: 80%;
+}
+.card:hover .card__price{
+    top:-10px;
+}
+.card:hover .card__name{
+    top:-10px;
+}
