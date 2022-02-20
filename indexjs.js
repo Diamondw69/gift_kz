@@ -87,11 +87,56 @@ const playSound = () => {
     let sound = new Audio("audio/buy.mp3");
     sound.play()
 }
-let ass = document.getElementsByClassName("card-button");
-for (let i=0; i<ass.length; i++) {
-    ass[i].addEventListener("click", playSound)
+let aud = document.getElementsByClassName("card-button");
+for (let i=0; i<aud.length; i++) {
+    aud[i].addEventListener("click", playSound)
 }
-//ass.addEventListener("click", console.log('opa'));
+$(document).ready(function(){
+    $("#nur-sultan").modal('show');
+});
+
+$("#other").click(function (){
+    $("#cities").modal('show');
+});
 
 
+/*Signing*/
 
+const signInBtn=document.querySelector('.signin-btn');
+const signUpBtn=document.querySelector('.signup-btn');
+const formBox=document.querySelector('.form-box');
+const body=document.body;
+signUpBtn.addEventListener('click',function() {
+    formBox.classList.add('active');
+    body.classList.add('active')
+});
+signInBtn.addEventListener('click',function() {
+    formBox.classList.remove('active');
+    body.classList.remove('active')
+});
+function validateForm() {
+    let x = document.forms["myForm"]["Username"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+let switchCode= document.getElementById("switchMode");
+switchMode.onclick=function(){
+    let theme= document.getElementById("theme");
+    const navbar=document.querySelector('#navbar');
+
+
+    if(theme.getAttribute("href")=="stylesmain.css"){
+        theme.href="darkmain.css";
+        navbar.classList.remove('navbar-light','bg-light');
+        navbar.classList.add('navbar-dark','bg-dark');
+        document.querySelector('.themetoggle span').textContent = 'dark_mode';
+
+    }else{
+        theme.href="stylesmain.css"
+        navbar.classList.remove('navbar-dark','bg-dark');
+        navbar.classList.add('navbar-light','bg-light');
+        document.querySelector('.themetoggle span').textContent = 'wb_sunny';
+    }
+}
