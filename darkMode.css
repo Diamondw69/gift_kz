@@ -4,16 +4,10 @@
     margin: 0;
     padding: 0;
 }
-.form-control:focus {
-    border-color: #000000;
-    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.2);
-}
 body{
     font-family: 'Quicksand', Arial;
-}
-a{
-    text-decoration: none;
-    color: black;
+    background-color: #343a40;
+    transition: 1s;
 }
 ul{
     list-style-type: none;
@@ -32,96 +26,47 @@ h3{
     justify-content: center;
     align-items: center;
 }
-/*header*/
-
+a{
+    text-decoration: none;
+    color: white;
+}
 /*content*/
-.carousel-item{
+.slider{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width:100%;
+}
+.slider .container{
     position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 90%;
+    border: #e3ddd8 30px solid;
 }
 .slide{
-    border: 12px solid #e3ddd8;
-    border-radius: 6px;
+    height: 100%;
+    width: 300%;
+    animation: 10s slider infinite;
 }
 .slide1{
-    position: absolute;
     height: 100%;
-    width: 40%;
-    border-radius: 0 20% 20% 0;
-    background-color: #e3ddd8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    background-color: aliceblue;
 }
 .slide2{
-    position: absolute;
-    height: 50%;
-    width: 40%;
-    background-color: white;
-    border-radius: 5%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
 }
 .slide3{
-    position: absolute;
-    height: 100%;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3.5rem;
-}
-.carousel-item a{
-    text-decoration: none;
-    color: black;
-}
-.watch{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #f6f6f6;
-    border-radius: 20px;
-}
-/*footer*/
-.back{
-
-    background-color: #1b0c0e;
-    color:white;
-}
-.footer{
     width: 100%;
     height: 100%;
+    background-color: blanchedalmond;
 }
-.footer ul{
-    margin: 0;
-    padding: 0;
+table, th, td {
+    border: 1px solid black;
 }
-.footer a{
-    color: white;
-
-}
-.social i{
-    margin: 5px 10px;
-}
-.information li{
-    margin-bottom: 10px;
-}
-.mediaa{
-    display: flex;
-    height: 100%;
-    max-height: 150px;
-    width: 100%;
-    justify-content: center;
-}
-.copy p{
-    background-color: #1b0c0e;
-    margin: 0;
-    padding: 0;
-}
-/***/
 .col-md-4 img{
     height: 100%;
     max-width: 540px;
@@ -163,6 +108,7 @@ h3{
     font-size: 18px;
     margin: 0 0 10px;
     position: relative;
+
 }
 .grid .card-text{
     font-size: 24px;
@@ -203,4 +149,74 @@ h3{
 }
 .grid .card:hover .card-button{
     top:0;
+}
+/*footer*/
+.back{
+    background-color: #343a40;
+    color:white;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+}
+.footer ul{
+    margin: 0;
+    padding: 0;
+}
+.footer a{
+    color: white;
+
+}
+.social i{
+    margin: 5px 10px;
+}
+.information li{
+    margin-bottom: 10px;
+}
+.mediaa{
+    display: flex;
+    height: 100%;
+    max-height: 150px;
+    width: 100%;
+    justify-content: center;
+}
+.copy p{
+    background-color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+.pp p{
+    margin-bottom: 0;
+}
+.back{
+
+    background-color: #343a40;
+}
+.card-text{
+    font-size:24px;
+}
+#tips{
+    border: none;
+    margin: 20px 0 20px 0;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color:#343a40;
+    color: white;
+}
+#tips button{
+    background-color: #5c636a;
+    color: white;
+}
+.accordion-body{
+    background-color: #5c636a;
+}
+.grid{
+    background-color: #5c636a;
+}
+#toDark{
+    background-color: #5c636a;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    font-size: 24px;
 }
